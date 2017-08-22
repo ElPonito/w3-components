@@ -1,7 +1,7 @@
 {
   "name": "w3-components",
   "version": "1.0.0",
-  "description": "UI React Components based on W3CSS",
+  "description": "React UI Components based on W3CSS",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",

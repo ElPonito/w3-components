@@ -1,2 +1,2 @@
-# react-boilerplate
-Minimalist React Application with Webpack 2 build
+# W3-Components
+React UI components based on W3-CSS
