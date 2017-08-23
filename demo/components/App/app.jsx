@@ -1,10 +1,18 @@
-import { Container } from '../../../lib'
+import { Card, Container } from '../../../lib'
 
 const App = ({children}) => {
     return (
-        <Container>
-            This the first piece of component
-        </Container>
+        <Card largeShadow>
+            <Container color="w3-blue">
+                <h1>Header</h1>
+            </Container>
+            <Container>
+                <p>This the first piece of component</p>
+            </Container>
+            <Container color="w3-blue">
+                <h5>Footer</h5>
+            </Container>
+        </Card>
     )
 }
 

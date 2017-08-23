@@ -1,5 +1,5 @@
-export default ({children}) => (
-    <div className="w3-container">
+export default ({children, color}) => (
+    <div className={`w3-container ${color ? color : ''}`}>
         {children}
     </div>
 )
