@@ -1,4 +1,4 @@
-import { Card, Container } from '../../../lib'
+import { Card, Container, Panel } from '../../../lib'
 
 const App = ({children}) => {
     return (
@@ -6,9 +6,9 @@ const App = ({children}) => {
             <Container color="w3-blue">
                 <h1>Header</h1>
             </Container>
-            <Container>
+            <Panel options={{color: 'blueGray'}}>
                 <p>This the first piece of component</p>
-            </Container>
+            </Panel>
             <Container color="w3-blue">
                 <h5>Footer</h5>
             </Container>
