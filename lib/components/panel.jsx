@@ -1,10 +1,10 @@
-import { createComponentClasses } from '../utils'
+import { createComponentClasses } from '../utils/componentClassesMaker'
 
-export default ({children, options}) => {
-    const optionalClasses = createComponentClasses(options)
+export default (props) => {
+    const componentClasses = createComponentClasses(props)
     return (
-        <div className={`w3-panel ${optionalClasses}`}>
-            {children}
+        <div className={`w3-panel ${componentClasses}`}>
+            {props.children}
         </div>
     )
 }

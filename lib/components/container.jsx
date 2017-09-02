@@ -1,5 +1,10 @@
-export default ({children, color}) => (
-    <div className={`w3-container ${color ? color : ''}`}>
-        {children}
-    </div>
-)
+import { createComponentClasses } from '../utils/componentClassesMaker'
+
+export default (props) => {
+    const componentClasses = createComponentClasses(props)
+    return (
+        <div className={`w3-container ${componentClasses}`}>
+            {props.children}
+        </div>
+    )
+}

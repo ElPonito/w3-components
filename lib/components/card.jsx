@@ -1,8 +1,11 @@
-export default ({children, largeShadow, color}) => {
-    const cardType = largeShadow ? `w3-card-4` : 'w3-card'
+import { createComponentClasses } from '../utils/componentClassesMaker'
+
+export default (props) => {
+    const componentClasses = createComponentClasses(props)
+    const cardType = props.largeShadow ? `w3-card-4` : 'w3-card'
     return (
-        <div className={`${cardType} ${color ? color : ''}`}>
-            {children}
+        <div className={`${cardType} ${componentClasses}`}>
+            {props.children}
         </div>
     )
 }
